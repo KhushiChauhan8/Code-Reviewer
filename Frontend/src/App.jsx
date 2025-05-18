@@ -25,7 +25,7 @@ function App() {
     const sound = new Audio('/click.mp3');
     sound.play();
     
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://code-reviewer-backend-h0mqfvdfx-khushi-chauhans-projects.vercel.app/ai/get-review', { code })
     setReview(response.data)
   }
 
