@@ -3,7 +3,9 @@ const aiRoutes = require("./routes/ai.routes");
 const cors = require("cors");
 
 const app = express();  //To Create Server
-app.use(cors()); //To allow cross-origin requests
+app.use(cors({
+  origin: ['https://code-reviewer-frontend-a552ycxqx-khushi-chauhans-projects.vercel.app']
+})); //To allow cross-origin requests
 
 app.use(express.json()); //To parse JSON data from the request body
 
